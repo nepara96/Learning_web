@@ -8,3 +8,6 @@ body {background-color: aquamarine;}
 .click:active{height: 70px;}
 #icon {font-size: 100px;color: blue;}
 #search {width: 150px;height: 30px;border-radius: 15px;}
+.click1{width: auto;height: auto;color: black;font-size: 40px; border-radius: none;cursor: pointer;border:none;}
+.click1:hover{background-color: aquamarine;}
+.click1:fullscreen{color: black;}
