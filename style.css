@@ -1,7 +1,27 @@
 body {background-color: aquamarine;}
+a:link, a:visited {
+    background-color: crimson;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+  }
+  
+  
+  a:hover, a:active {
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+  }
 .square {width: 300px; height: 300px; background-color: blueviolet; border: 6px solid black;transform: translate(500px);}
 .circle {width: 300px; height: 300px; background-color: blue; border: 6px solid black; border-radius: 50%;transform: translate(90px);}
-.text {font-size: 40px; color: crimson; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.text {font-size: 40px; color: red; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 .square2{width: 400px;height: 400px;background-color: brown;border: 5px solid black; transform: translatex(380px);}
 .click{width: auto;height: 50px;color:blue;font-size: medium;border-radius: 20px;cursor: pointer;border: none; transition: 0.5s;}
 .click:hover{background-color: green;}
@@ -11,3 +31,9 @@ body {background-color: aquamarine;}
 .click1{width: auto;height: auto;color: black;font-size: 40px; border-radius: none;cursor: pointer;border:none;}
 .click1:hover{background-color: aquamarine;}
 .click1:fullscreen{color: black;}
+.icon1{width: 15px;height: 15px;}
+form {border-radius: 8px;}
+h1 {font-family: 'Brush Script MT', cursive;}
+h3 {font-family: 'Courier New', monospace;}
+p{font-family: Tahoma, sans-serif;}
+a{font-family: 'Times New Roman', serif;}

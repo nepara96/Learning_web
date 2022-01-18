@@ -2,12 +2,32 @@
 <html lang="en">
 …
     <head>
+
+        <link rel="stylesheet" href="../style.css" />
    <title>  CSS GG   </title> 
    <style>
     body {background-color: aquamarine;;}
     hr {background-color: aquamarine; height: 2px;; border-style: none; width: 30%;}
     img {width: 300px; height: 300px; background-color: aquamarine; border: 6px; border-radius: 50%;transform: translate(0px);}
-    .icon1 {width:15px; height:15px; background-color: aquamarine; border: 6px; border-radius: 50%;transform: translate(0px);}
+    a:link, a:visited {
+        background-color: blue;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 8px;
+      }
+      
+      a:hover, a:active {
+        background-color: green;
+      }
+      
+      
+      a:hover, a:active {
+        background-color: green;
+        color: white;
+      }
    </style>
     
     </head>
@@ -16,7 +36,7 @@
     <br>
     <h1 style='color:red;'>GIORGI NEPARIDZE</h1>
     <p><em>Genious <srong>football expert,theory master of politics</strong> and a <strong>junior web develper</strong></em></p>
-    <P>born in 1996 in <a href='https://ka.wikipedia.org/wiki/%E1%83%AD%E1%83%98%E1%83%90%E1%83%97%E1%83%A3%E1%83%A0%E1%83%90'>Chiatura city</a>, Georgia.
+    <P>born in 1996 in <a id='link' href='https://ka.wikipedia.org/wiki/%E1%83%AD%E1%83%98%E1%83%90%E1%83%97%E1%83%A3%E1%83%A0%E1%83%90'>Chiatura city</a> Georgia.
     He was mastered in politics theory and where new in web development in early 20's
     </p></center>
     <hr>
@@ -74,7 +94,11 @@
     
     
     <center><h1 style='color:red;'>Created by GG</h1></center><br>
-    <center><img class='icon1' src='images\Red_copyright.png' > 2022 all rights reserved</center>
+    <center><img class='icon1' src='..\images\Red_copyright.png' width='15' height='15' > 2022 all rights reserved </center>
+    
+
+    
+
        
     
     </body>
