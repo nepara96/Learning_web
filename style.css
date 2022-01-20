@@ -1,38 +1,70 @@
 body {background-color: aquamarine;}
-a:link, a:visited {
-    background-color: crimson;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-  }
-  
-  a:hover, a:active {
-    background-color: green;
-  }
-  
-  
-  a:hover, a:active {
-    background-color: green;
-    color: white;
-    border-radius: 8px;
-  }
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
 .square {width: 300px; height: 300px; background-color: blueviolet; border: 6px solid black;transform: translate(500px);}
 .circle {width: 300px; height: 300px; background-color: blue; border: 6px solid black; border-radius: 50%;transform: translate(90px);}
 .text {font-size: 40px; color: red; font-family: 'Brush Script MT', cursive;;}
 .square2{width: 400px;height: 400px;background-color: brown;border: 5px solid black; transform: translatex(380px);}
-.click{width: auto;height: 50px;color:blue;font-size: medium;border-radius: 20px;cursor: pointer;border: none; transition: 0.5s;}
-.click:hover{background-color: green;}
-.click:active{height: 70px;}
 #icon {font-size: 50px;color: red;}
 .click1{width: auto;height: auto;color: black;font-size: 40px; border-radius: none;cursor: pointer;border:none;}
 .click1:hover{background-color: aquamarine;}
 .click1:fullscreen{color: black;}
 .icon1{width: 15px;height: 15px;}
-form {border-radius: 8px;}
-h1 {font-family: 'Brush Script MT', cursive;}
+.icon2{width: 300px; height: 300px; background-color: aquamarine; border: 6px; border-radius: 50%;transform: translate(0px);}
+.icon3{width: 75px;height: 75px;}
+h1 {font-family: 'Brush Script MT', cursive; color: red;}
 h3 {font-family: 'Courier New', monospace;}
 p{font-family: Tahoma, sans-serif;}
 a{font-family: 'Times New Roman', serif;}
+hr {background-color: aquamarine; height: 2px;; border-style: none; width: 30%;}
+
+
+
+ body {margin: 0;}
+
+ul.topnav {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #072227;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+display: block;
+color: white;
+text-align: center;
+padding: 15px 17px;
+text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #FFC600;}
+
+ul.topnav li a.active {background-color: red;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 610px) {
+ul.topnav li.right, 
+ul.topnav li {float: right;}
+}

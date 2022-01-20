@@ -5,19 +5,47 @@
 
         <link rel="stylesheet" href="../style.css" />
    <title>  CSS GG   </title> 
-
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
-    body {background-color: aquamarine;;}
-    hr {background-color: aquamarine; height: 2px;; border-style: none; width: 30%;}
-    img {width: 300px; height: 300px; background-color: aquamarine; border: 6px; border-radius: 50%;transform: translate(0px);}
+    body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #072227;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 17px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #FFC600;}
+
+ul.topnav li a.active {background-color: red;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 610px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: right;}
+}
+    
     a:link, a:visited {
-        background-color: blue;
+        background-color: #072227;
         color: white;
         padding: 14px 25px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        border-radius: 8px;
+        border-radius: 0px;
       }
       
       a:hover, a:active {
@@ -29,11 +57,86 @@
         background-color: green;
         color: white;
       }
+      {
+        box-sizing: border-box;
+      }
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      
+      input[type=submit] {
+        background-color: #072227;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      
+      input[type=submit]:hover {
+        background-color: gold;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #45a049;
+        padding: 20px;
+      }
+      
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
    </style>
     
     </head>
     <body>
-    <center><img src='https://scontent.ftbs6-2.fna.fbcdn.net/v/t1.6435-9/145210043_3740434649383557_7081986686197630549_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_ohc=YrmnyZXc6QMAX_l3gBd&tn=l3T96mcQNEOvj-xT&_nc_ht=scontent.ftbs6-2.fna&oh=00_AT-V2g29RWOqbujJSSAefLZxQhtIwpjJ2lLD6Na9sGOj_Q&oe=62046C39' width='150' height='200'>
+      <ul class="topnav">
+        <li><a class="active" href="https://nepara96.github.io/Learning_web/">მთავარი</a></li>
+        <li><a href="https://nepara96.github.io/Learning_web/HTML_PERSONAL_SITE/Index1.html">ჩემ შესახებ HTML</a></li>
+        
+        <li class="right"><a href="https://nepara96.github.io/Learning_web/HTML_PERSONAL_SITE/index2.html">ჩემ შესახებ</a></li>
+      </ul>
+      <form class='search'>
+        <input type="text" name="search" placeholder="Search..">
+      </form>
+      <br>
+      <center><img class='icon3'src='..\images\canvas.png' width='75' height='75'> <h1>GG STUDIO PRESENTS!</h1></center>
+      
+    <center><img class='icon2' src='https://scontent.ftbs6-2.fna.fbcdn.net/v/t1.6435-9/145210043_3740434649383557_7081986686197630549_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_ohc=YrmnyZXc6QMAX_l3gBd&tn=l3T96mcQNEOvj-xT&_nc_ht=scontent.ftbs6-2.fna&oh=00_AT-V2g29RWOqbujJSSAefLZxQhtIwpjJ2lLD6Na9sGOj_Q&oe=62046C39'>
     <br>
     <h1 style='color:red;'>GIORGI NEPARIDZE</h1>
     <p><em>Genious <srong>football expert,theory master of politics</strong> and a <strong>junior web develper</strong></em></p>
@@ -41,24 +144,60 @@
     He was mastered in politics theory and where new in web development in early 20's
     </p></center>
     <hr>
-    <h3 style='color:red;'>Contact info</h3>
+    <h3 style='color:red;'>  Contact info</h3>
+    <div class="container">
+      <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="georgia">Georgia</option>
+            <option value="usa">USA</option>
+            
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+    
 
-        <a href='https://www.facebook.com/nefaridze.giorgi/'>Facebook</a>
-        <a href='https://mail.google.com/mail/u/0/#search/nepara9%40gmail.com'>Gmail</a>
-        <form class='' action='mailto:nepara9@gmail.com' method='post'>
-            <label>Your Name</label>
-            <input type='text' name='yourName' value=''><br>
-            <label>Password</label>
-            <input type='Password' name='Password' value=''><br>
-            <label>Your Email</label>
-            <input type='email' name='yourEmail' value=''><br>
-            <label>Your Message:</label>
-            <textarea name='name' rows='10' cols='30'></textarea><br>
-            <input type='submit' name=''>
+        
 
-        </form>
+        
         <br>
-        <h3 style='color:red;'>Education</h3>
+        <h3 style='color:red;'>  Education</h3>
 
     <ul>
     <li><a href='https://www.facebook.com/173skolashool/'>173 Public school</a></li>
