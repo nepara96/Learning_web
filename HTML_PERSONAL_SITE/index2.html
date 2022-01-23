@@ -4,6 +4,9 @@
     <head>
 
         <link rel="stylesheet" href="../style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@800&display=swap" rel="stylesheet">
    <title>  CSS GG   </title> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
@@ -57,69 +60,7 @@ ul.topnav li.right {float: right;}
         background-color: green;
         color: white;
       }
-      {
-        box-sizing: border-box;
-      }
-      
-      input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
-      
-      label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-      }
-      
-      input[type=submit] {
-        background-color: #072227;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-      }
-      
-      input[type=submit]:hover {
-        background-color: gold;
-      }
-      
-      .container {
-        border-radius: 5px;
-        background-color: #45a049;
-        padding: 20px;
-      }
-      
-      .col-25 {
-        float: left;
-        width: 25%;
-        margin-top: 6px;
-      }
-      
-      .col-75 {
-        float: left;
-        width: 75%;
-        margin-top: 6px;
-      }
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      
-      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 600px) {
-        .col-25, .col-75, input[type=submit] {
-          width: 100%;
-          margin-top: 0;
-        }
-      }
+ 
    </style>
     
     </head>
@@ -131,7 +72,7 @@ ul.topnav li.right {float: right;}
         <li class="right"><a href="https://nepara96.github.io/Learning_web/HTML_PERSONAL_SITE/index2.html">ჩემ შესახებ</a></li>
       </ul>
       <form>
-        <input type="text" name="search" placeholder="Search..">
+        <input type="text" name="search" placeholder="ძებნა..">
       </form>
       <br>
       <center><img class='icon3'src='..\images\canvas.png' width='75' height='75'> <h1>GG STUDIO PRESENTS!</h1></center>
@@ -143,77 +84,30 @@ ul.topnav li.right {float: right;}
     <P>born in 1996 in <a id='link' href='https://ka.wikipedia.org/wiki/%E1%83%AD%E1%83%98%E1%83%90%E1%83%97%E1%83%A3%E1%83%A0%E1%83%90'>Chiatura city</a> Georgia.
     He was mastered in politics theory and where new in web development in early 20's
     </p></center>
-    <hr>
-    <h3 style='color:red;'>  Contact info</h3>
-    <div class="container">
-      <form action="/action_page.php">
-      <div class="row">
-        <div class="col-25">
-          <label for="fname">First Name</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="lname">Last Name</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="country">Country</label>
-        </div>
-        <div class="col-75">
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="georgia">Georgia</option>
-            <option value="usa">USA</option>
-            
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="subject">Subject</label>
-        </div>
-        <div class="col-75">
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-      </form>
-    </div>
     
+    <center><h3 style='color:red;'>  Contact info</h3>
+    <a href='https://www.facebook.com/nefaridze.giorgi/'><img src='https://cdn-icons-png.flaticon.com/512/1312/1312139.png' width='25' height='25'> Facebook</a>
+    <a href='https://www.messenger.com/t/100000683925990'><img src='https://cdn-icons-png.flaticon.com/512/5968/5968771.png' width='25' height='25'> Messenger</a>
+    <a href='https://www.instagram.com/nefaridze.giorgi/'><img src='https://cdn-icons.flaticon.com/png/512/4138/premium/4138124.png?token=exp=1642959057~hmac=2f9ee86273f2ed531e5b2251a272afee' width='25' height='25'> Instagram</a>
+    <a href='https://mail.google.com/mail/u/0/#search/nepara9%40gmail.com'><img src='https://cdn-icons-png.flaticon.com/512/5968/5968534.png' width='25' height='25'> Gmail</a></center>
 
-        
-
-        
         <br>
-        <h3 style='color:red;'>  Education</h3>
+    <center><h3 style='color:red;'>  Education</h3>
 
     <ul>
     <li><a href='https://www.facebook.com/173skolashool/'>173 Public school</a></li>
     <li><a href='https://gtu.ge/'>Georgian Tecnical University</a></li>
-    <li>Self made Graphic Designer and new junior web developer</li>
+    <li>Self made Graphic Designer and new junior web developer</li></center>
     <br>
     
 
-    <h3 style='color:red;'>Hobbies</h3>
-    <ol>
+    <center><h3 style='color:red;'>Hobbies</h3>
+    <ul>
         <li>Watching Football</li>
         <li>Gaming</li>
         <li>Playing quiz Games</li>
-        <li>Drinking with friends</li>
-    </ol>
-    <h3 style='color:red;'>Skills</h3>
+        <li>Drinking with friends</li></center><br>
+    <center><h3 style='color:red;'>Skills</h3>
     <table>
     <tr>
     <td>mobilized</td>
@@ -227,7 +121,7 @@ ul.topnav li.right {float: right;}
     <td>fast learner</td>
     <td>🌟🌟🌟</td>
     </tr>
-    </table>
+    </table></center>
 
     
     

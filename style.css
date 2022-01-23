@@ -6,13 +6,17 @@ input[type=text] {
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url('searchicon.png');
+  background-image: url('https://shares.ge//xdHAgTPV');
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
 }
 
-
+ul {list-style-type: none;
+  margin: 0;
+  padding: 0;
+font-family: monospace,monaco;}
+table{font-family: fantasy;}
 .text {font-size: 40px; color: red; font-family: 'Brush Script MT', cursive;;}
 #icon {font-size: 50px;color: red;}
 .click1{width: auto;height: auto;color: black;font-size: 40px; border-radius: none;cursor: pointer;border:none;}
