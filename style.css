@@ -16,6 +16,26 @@ ul {list-style-type: none;
   margin: 0;
   padding: 0;
 font-family: monospace,monaco;}
+
+a:link, a:visited {                                   
+  background-color: #072227;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0px;
+}
+
+a:hover, a:active {
+  background-color: gold;
+}
+
+
+a:hover, a:active {
+  background-color: gold;
+  color: white;
+}
 table{font-family: fantasy;}
 .text {font-size: 40px; color: red; font-family: 'Brush Script MT', cursive;;}
 #icon {font-size: 50px;color: red;}
@@ -64,3 +84,30 @@ ul.topnav li.right {float: right;}
 ul.topnav li.right, 
 ul.topnav li {float: right;}
 }
+
+.btn {
+  background: #072227;
+  background-image: -webkit-linear-gradient(top, #072227, #072227);
+  background-image: -moz-linear-gradient(top, #072227, #072227);
+  background-image: -ms-linear-gradient(top, #072227, #072227);
+  background-image: -o-linear-gradient(top, #072227, #072227);
+  background-image: linear-gradient(to bottom, #072227, #072227);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 1px 3px AEFEFF;
+  -moz-box-shadow: 0px 1px 3px AEFEFF;
+  box-shadow: 0px 1px 3px AEFEFF;
+  font-family: Courier New;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: gold;
+  text-decoration: none;
+}
+
+
