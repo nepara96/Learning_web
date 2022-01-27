@@ -1,15 +1,21 @@
-body {background-color: aquamarine;background-image: url("https://static.vecteezy.com/system/resources/previews/002/194/185/non_2x/seamless-aqua-menthe-color-pattern-on-a-turquoise-background-of-round-drops-or-splashes-vector.jpg");}
+body {background-color: #35858B;}
 input[type=text] {
-  width: 100%;
+  width: 150px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url('https://shares.ge//xdHAgTPV');
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}  
+
+
+input[type=text]:focus {
+  width: 100%;
 }
 
 ul {list-style-type: none;
@@ -55,30 +61,9 @@ hr {background-color: aquamarine; height: 2px;; border-style: none; width: 30%;}
 
  body {margin: 0;}
 
-ul.topnav {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #072227;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-display: block;
-color: white;
-text-align: center;
-padding: 15px 17px;
-text-decoration: none;
-}
 
 
-ul.topnav li a:hover:not(.active) {background-color: #FFC600;}
-
-ul.topnav li a.active {background-color: red;}
-
-ul.topnav li.right {float: right;}
+ul.menue li.right {float: right;}
 
 @media screen and (max-width: 610px) {
 ul.topnav li.right, 
@@ -157,4 +142,11 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.ending {
+  background-color: #4FBDBA;
+  padding-bottom: 10px;
+  padding-top: 1px; 
+
 }
