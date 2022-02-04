@@ -122,9 +122,29 @@
     }
     </script>
     </li>
-        <li class='right';> <form>
-          <input type="text" name="search" placeholder="ძებნა..">
-        </form></li>
+        <li class='right';>
+          <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form action="/action_page.php">
+                <input type="text" placeholder="ძებნა.." name="search">
+                <button type="submit">ძებნა</button>
+              </form>
+            </div>
+          </div>
+          
+          
+          <button class="openBtn" onclick="openSearch()">ძებნა</button>
+          
+          <script>
+          function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+          }
+          
+          function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+          }
+          </script>
       </ul>
       <br>
       <center><img class='icon3'src='..\images\canvas.png' width='75' height='75'> <h1>GG STUDIO PRESENTS!</h1></center>
