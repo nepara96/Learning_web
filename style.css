@@ -192,7 +192,7 @@ span.psw {
   position: absolute;
   right: 25px;
   top: 0;
-  color: #000;
+  color: #4FBDBA;
   font-size: 35px;
   font-weight: bold;
 }
@@ -227,6 +227,7 @@ span.psw {
   }
   .cancelbtn {
      width: 100%;
+     padding: 10px 18px;
   }
 }
 
