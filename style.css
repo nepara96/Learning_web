@@ -18,7 +18,7 @@ body {
 }
 
 .openBtn:hover {
-  background: #4FBDBA;
+  background: #072227;
 }
 
 .overlay {
@@ -312,7 +312,10 @@ li.dropdown {
   display: block;
 }
 
-
+li.sign {
+float: right;
+padding: auto;
+}
 
 .ending {
   background-color: #4FBDBA;
