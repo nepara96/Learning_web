@@ -1,6 +1,3 @@
-waitUntil();
-
-
 function toggleResetPswd(e){
     e.preventDefault();
     $('#logreg-forms .form-signin').toggle() // display:block or none
