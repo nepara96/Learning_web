@@ -51,10 +51,12 @@
               margin-bottom: -1px;
               border-bottom-right-radius: 0;
               border-bottom-left-radius: 0;
+              margin-right: 162px;
           }
           #logreg-forms .form-signin input[type="password"] {
               border-top-left-radius: 0;
               border-top-right-radius: 0;
+              margin-right: 162px;
           }
           
           #logreg-forms .social-login{
