@@ -39,6 +39,8 @@
             font-family: "Robato",sans-serif;
             font-size: 17px;
           }
+
+          
           
           #logreg-forms{
               width:412px;
@@ -154,7 +156,10 @@
               #logreg-forms  .google-btn:after{
                   content:'Google+';
               }
-          
+              .icon2{width: 100%; height: 100%;
+                background-color: aquamarine; border: 6px; border-radius: 50%;
+                transform: translate(0px);
+               }
           }
 
 
